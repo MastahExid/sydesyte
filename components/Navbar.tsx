@@ -34,8 +34,8 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex-shrink-0 flex items-center gap-2 group">
             <img 
-              src="https://picsum.photos/40/40" 
-              alt="Syde Logo" 
+              src="https://raw.githubusercontent.com/MastahExid/SydeIPAs/refs/heads/main/AppIcon.png" 
+              alt="Syde" 
               className="h-10 w-10 rounded-xl object-cover transition-transform group-hover:scale-105"
             />
             <span className="font-bold text-xl tracking-tight hidden sm:block">Syde</span>

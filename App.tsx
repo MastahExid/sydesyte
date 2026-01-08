@@ -8,6 +8,9 @@ import Guides from './pages/Guides';
 import GuideDetail from './pages/GuideDetail';
 import FAQ from './pages/FAQ';
 import Developers from './pages/Developers';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
+import NotFound from './pages/NotFound';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -31,6 +34,9 @@ const App: React.FC = () => {
             <Route path="/guides/:id" element={<GuideDetail />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/developers" element={<Developers />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />

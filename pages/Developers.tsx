@@ -4,6 +4,10 @@ import BackgroundGradients from '../components/BackgroundGradients';
 import { Code, Download, ExternalLink, Box, Zap } from 'lucide-react';
 
 const Developers: React.FC = () => {
+  const handleDownloadAssets = () => {
+    window.open('https://www.google.com', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-[#0B0B15] text-white pt-32 pb-20 relative overflow-hidden">
       <BackgroundGradients />
@@ -31,7 +35,10 @@ const Developers: React.FC = () => {
               <p className="text-gray-400 text-lg mb-8 leading-relaxed">
                 Download official Syde logos, app icons, and brand assets for use in your websites or repos.
               </p>
-              <button className="flex items-center gap-3 px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl font-bold transition-all w-full justify-center">
+              <button 
+                onClick={handleDownloadAssets}
+                className="flex items-center gap-3 px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl font-bold transition-all w-full justify-center"
+              >
                 <Download size={20} />
                 Download Assets
               </button>

@@ -85,8 +85,8 @@ const FAQ: React.FC = () => {
                 Get real-time support from the developers and the community. Join thousands of other users!
               </p>
               <a 
-                href="https://discord.gg/" 
-                target="_blank" 
+                href="https://discord.gg/EEAF53sMMd" 
+                target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-3 bg-[#5865F2] hover:bg-[#4752C4] text-white px-10 py-4 rounded-full font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-indigo-900/40"
               >

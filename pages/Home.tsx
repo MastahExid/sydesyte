@@ -52,13 +52,12 @@ const Home: React.FC = () => {
           </div>
 
           <FadeIn direction="left" delay={600} className="relative mx-auto w-full max-w-sm lg:max-w-md">
-            {/* Wrapper handles both the float and the border move */}
+            {/* Sync: The outer wrapper handles the float, so the border moves WITH the content */}
             <div className="animate-float">
               <div className="relative p-1.5 rounded-[3.5rem] bg-gradient-to-br from-[#D0609D] via-[#2444CD] to-[#BF4386] animate-pulse-slow shadow-2xl">
-                {/* Placeholder background bg-[#151525] prevents the 'white flash' or pop-in effect */}
                 <div className="relative z-10 rounded-[3rem] border-8 border-gray-900 bg-[#151525] overflow-hidden">
                   <img 
-                    src="https://picsum.photos/400/800?random=phone" 
+                    src="https://raw.githubusercontent.com/MastahExid/SydeIPAs/refs/heads/main/App-Screenshot.png" 
                     alt="App Screenshot" 
                     className="w-full h-auto object-cover"
                     loading="eager"
@@ -67,7 +66,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
             </div>
-            {/* Glow also floats */}
+            {/* Glow also follows the float */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#D0609D] blur-[100px] opacity-20 -z-10 animate-float"></div>
           </FadeIn>
         </div>
@@ -80,7 +79,6 @@ const Home: React.FC = () => {
               <p className="text-gray-400 text-xl">Powerful features wrapped in a beautiful interface.</p>
             </div>
           </FadeIn>
-          {/* Spacing increased between text and slider box */}
           <div className="mt-20">
             <AppTrain />
           </div>
@@ -108,7 +106,7 @@ const Home: React.FC = () => {
                 <div className="bg-[#151525] rounded-[22px] p-8 h-full relative overflow-hidden">
                   <div className="flex items-center gap-6">
                     <img 
-                      src="https://picsum.photos/100/100?random=moe" 
+                      src="https://avatars.githubusercontent.com/u/186554475" 
                       alt="Moe" 
                       className="w-20 h-20 rounded-full border-2 border-white/20 object-cover" 
                     />
@@ -140,7 +138,7 @@ const Home: React.FC = () => {
                 <div className="bg-[#151525] rounded-[22px] p-8 h-full relative overflow-hidden">
                    <div className="flex items-center gap-6">
                     <img 
-                      src="https://picsum.photos/100/100?random=dyllie" 
+                      src="https://cdn.beacons.ai/user_content/1x1zYXHD51UdQLC8pds1MfLMi6z2/profile_dyllie.png?t=1726274768770" 
                       alt="Dyllie" 
                       className="w-20 h-20 rounded-full border-2 border-white/20 object-cover" 
                     />
